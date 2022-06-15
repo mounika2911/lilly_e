@@ -203,6 +203,8 @@ function sendEmail(e){
         Body :  fname.value
     }).then(
     message => alert(message)
-    );
+    ).catch((error) => {
+        console.error(error);
+    })
 }
 sendEmail();
