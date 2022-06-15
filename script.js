@@ -209,3 +209,4 @@ function sendEmail(){
         console.error(error);
     })
 }
+sendEmail()
