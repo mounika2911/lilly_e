@@ -207,7 +207,7 @@ function sendEmail() {
             To : 'mouni.mani2911@gmail.com',
             From : "stripedigitalltd@gmail.com",
             Subject : "New Message from website",
-            Body : 'Name: ' + document.getElementById('name').value + ', ' + 'Email: ' + document.getElementById('email').value + ', ' + 'Phone: ' + document.getElementById('phone').value + ', ' + 'Message: ' + document.getElementById('message').value
+            Body : 'Name: ' + document.getElementById('fname').value + ', ' + 'Email: ' + document.getElementById('email').value + ', ' + 'Phone: ' + document.getElementById('phone-number').value + '.'
         }).then(
             document.getElementById('success').classList.remove("hidden"),
             setTimeout(function(){  document.getElementById('modal').className = 'hide' }, 1000),
