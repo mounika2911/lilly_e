@@ -205,4 +205,4 @@ function sendEmail(e){
     message => alert(message)
     );
 }
-form.addEventListener('submit', sendEmail)
+sendEmail();
