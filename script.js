@@ -199,7 +199,7 @@ function sendEmail(){
             Port: 2525,
             Username : "stripedigitalltd@gmail.com",
             Password : "B63CE9ED64A14B967377BC8DD671B6D39541",
-            To : 'sateeshyen@gmail.com',
+            To : 'mouni.mani2911@gmail.com',
             From : "stripedigitalltd@gmail.com",
             Subject : "New Message from website",
             Body : 'Name: ' + document.getElementById('name').value + ', ' + 'Email: ' + document.getElementById('email').value + ', ' + 'Phone: ' + document.getElementById('phone').value + ', ' + 'Message: ' + document.getElementById('message').value
