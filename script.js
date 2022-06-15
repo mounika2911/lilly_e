@@ -190,3 +190,17 @@ function chkIns() {
 
 
 // --------------------------smtp JS-----------------------------------
+const form = document.querySelector(".form-submit")
+function sendEmail(e){
+    e.preventDefault();
+    Email.send({
+        SecureToken : "3d891de5-eb0b-4d38-9f84-2cc58a6a5b72",
+        To : 'mounikagnd@gmail.com',
+        From : email.value,
+        Subject : "Contact From",
+        Body :  msg.value
+    }).then(
+    message => alert(message)
+    );
+}
+form.addEventListener('submit', sendEmail)
