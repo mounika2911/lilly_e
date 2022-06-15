@@ -190,23 +190,48 @@ function chkIns() {
 
 
 // --------------------------smtp JS-----------------------------------
-const form = document.querySelector(".form-submit")
-const email = document.getElementById('#email')
-const fname = document.getElementById("#fname")
-function sendEmail(){
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Port: 2525,
-        Username : "stripedigitalltd@gmail.com",
-        Password : "B63CE9ED64A14B967377BC8DD671B6D39541",
-        To : 'sateeshyen@gmail.com',
-        From : "stripedigitalltd@gmail.com",
-        Subject : "New Message from website",
-        Body : "message"
-    }).then(
-    message => alert(message)
-    ).catch((error) => {
-        console.error(error);
-    })
+function sendEmail() {
+    const name = document.getElementById('fname').value
+    const phone = document.getElementById('phone-number').value
+    const email = document.getElementById('email').value
+
+    if(name == '' || email == '' || phone == '' || message == '') {
+        document.getElementById('error').classList.remove("hidden")
+    } else {
+        document.getElementById('error').classList.add("hidden");
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Port: 2525,
+            Username : "stripedigitalltd@gmail.com",
+            Password : "B63CE9ED64A14B967377BC8DD671B6D39541",
+            To : 'mouni.mani2911@gmail.com',
+            From : "stripedigitalltd@gmail.com",
+            Subject : "New Message from website",
+            Body : 'Name: ' + document.getElementById('name').value + ', ' + 'Email: ' + document.getElementById('email').value + ', ' + 'Phone: ' + document.getElementById('phone').value + ', ' + 'Message: ' + document.getElementById('message').value
+        }).then(
+            document.getElementById('success').classList.remove("hidden"),
+            setTimeout(function(){  document.getElementById('modal').className = 'hide' }, 1000),
+            document.getElementById("contact").reset()
+        );
+    }
 }
-sendEmail()
+// const form = document.querySelector(".form-submit")
+// const email = document.getElementById('#email')
+// const fname = document.getElementById("#fname")
+// function sendEmail(){
+//     Email.send({
+//         Host : "smtp.elasticemail.com",
+//         Port: 2525,
+//         Username : "stripedigitalltd@gmail.com",
+//         Password : "B63CE9ED64A14B967377BC8DD671B6D39541",
+//         To : 'sateeshyen@gmail.com',
+//         From : "stripedigitalltd@gmail.com",
+//         Subject : "New Message from website",
+//         Body : "message"
+//     }).then(
+//     message => alert(message)
+//     ).catch((error) => {
+//         console.error(error);
+//     })
+// }
+// sendEmail()
