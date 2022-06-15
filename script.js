@@ -195,9 +195,12 @@ const email = document.getElementById('#email')
 const fname = document.getElementById("#fname")
 function sendEmail(){
     Email.send({
-        SecureToken : "3d891de5-eb0b-4d38-9f84-2cc58a6a5b72",
-        To : 'mounikagnd@gmail.com',
-        From : 'mouni.mani2911@gmail.com',
+        Host : "smtp.elasticemail.com",
+        Port: 2525,
+        Username : "stripedigitalltd@gmail.com",
+        Password : "B63CE9ED64A14B967377BC8DD671B6D39541",
+        To : 'mouni.mani2911@gmail.com',
+        From : "stripedigitalltd@gmail.com",
         Subject : "Contact From",
         Body :  'msg'
     }).then(
