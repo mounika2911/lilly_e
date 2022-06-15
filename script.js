@@ -198,9 +198,9 @@ function sendEmail(){
         Host : "smtp.elasticemail.com",
         Port: 2525,
         Username : "mounikagnd@gmail.com",
-        Password : "5F5435C1C0953293B71BAB54853F1EF3DD55",
+        Password : "AFC4F52659E4F082542453F124A92622BD53",
         To : 'sateeshyen@gmail.com',
-        From : document.getElementById('email').value,
+        From : 'mouni.mani2911@gmail.com',
         Subject : "Contact From",
         Body : 'Name: ' + document.getElementById('fname').value + ', ' + 'Email: ' + document.getElementById('email').value + ', ' + 'Phone: ' + document.getElementById('phone-number').value +'.'
     }).then(
