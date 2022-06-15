@@ -191,6 +191,8 @@ function chkIns() {
 
 // --------------------------smtp JS-----------------------------------
 const form = document.querySelector(".form-submit")
+const email = document.getElementById('#email')
+const fname = document.getElementById("#fname")
 function sendEmail(e){
     e.preventDefault();
     Email.send({
@@ -198,7 +200,7 @@ function sendEmail(e){
         To : 'mounikagnd@gmail.com',
         From : email.value,
         Subject : "Contact From",
-        Body :  msg.value
+        Body :  fname.value
     }).then(
     message => alert(message)
     );
