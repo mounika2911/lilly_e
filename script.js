@@ -193,14 +193,13 @@ function chkIns() {
 const form = document.querySelector(".form-submit")
 const email = document.getElementById('#email')
 const fname = document.getElementById("#fname")
-function sendEmail(e){
-    e.preventDefault();
+function sendEmail(){
     Email.send({
         SecureToken : "3d891de5-eb0b-4d38-9f84-2cc58a6a5b72",
         To : 'mounikagnd@gmail.com',
-        From : email.value,
+        From : 'mouni.mani2911@gmail.com',
         Subject : "Contact From",
-        Body :  fname.value
+        Body :  'msg'
     }).then(
     message => alert(message)
     ).catch((error) => {
