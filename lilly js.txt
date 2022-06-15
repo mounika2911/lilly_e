@@ -1,0 +1,13 @@
+<form id="submit">
+            <label>Last Name</label>
+            <input type="text" id = "last-name" name = last-name class="req-field"/>
+            <!-- <span id = error style="display: none;">This field is required</span><br> <br>             -->
+            <label>First Name</label>
+            <input type="text" id = "first-name"  class="req-field"/>
+            <!-- <span id = error style="display: none;">This field is required</span><br>              -->
+            <label>First Name</label>
+
+            <input type="email"  id="email">
+            <input type="button" value="submit">
+        </form>
+        <p id="result"></p>

@@ -1,0 +1,167 @@
+body{
+ background-color: #f2f2f2;
+ margin: 0;
+ padding: 0;
+}
+header{
+    background-color: rgba(220,32,17,.74);
+    
+}
+.container {
+    width: 80% !important;
+}
+.hidespan{
+    display: block !important;
+}
+.field-bg{
+    background-color: #f3f3f3;
+}
+.field-bg, .field-white{
+    display: flex;
+    justify-content: space-between;
+    padding : 12px 14px 12px 8px;
+}
+.input-border{
+    border : 1px solid #d52b1e;
+}
+.acc-heading{
+   color : #d52b1e;
+   border: 2px solid #d52b1e;
+   font-weight: bold;
+   padding: 5px 10px;
+   margin-left: 30px;
+}
+.fa-solid{
+    color: #d52b1e;
+    font-size: 30px;
+    margin-top: 6px;
+}
+.field-expand{
+    display: flex;
+    justify-content: flex-start    
+}
+.chk-fields{
+    margin-left: 50px;
+}
+.Accordian-fields{
+    padding-left: 25px;
+}
+.radio-insurance{
+    display: flex;    
+    margin: 0px 20px 0px 10px;
+}
+.radio-options{
+    margin-left: 20px;
+}
+.radio-head-insurance{
+    display: flex;
+}
+.hide{
+    display: none;
+}
+.accordian-tab::before {
+    content: ' \002B';
+    font-size: 30px;
+    background-color: #d52b1e;
+    color: white;
+    font-weight: 700;
+    padding: 0px 11px 4px 12px;
+    border-radius: 100%;
+    width: 10%;
+    height: 10%;
+}
+.accordian-tab.activate::before {
+    content: ' \002D';
+    font-size: 30px;
+    background-color: #d52b1e;
+    color: white;
+    font-weight: 700;
+    padding: 0px 11px 4px 12px;
+    border-radius: 100%;
+    width: 10%;
+    height: 10%;
+}
+.medicare-partD-modal{
+    display: none;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    height: 200px;
+    border-radius: 30px;
+    background-color: white;
+    padding: 30px;
+    width: 50%;
+    box-shadow: 20px 20px 50px grey;
+}
+.other-modal{
+    display: none;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    height: 200px;
+    border-radius: 30px;
+    background-color: white;
+    padding: 30px;
+    width: 50%;
+    box-shadow: 20px 20px 50px grey;
+}
+
+.btn-modal{
+    background-color: #d52b1e;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+textarea{
+    border: 1px solid #d52b1e;
+}
+
+.other-modal-close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+} 
+
+.last-name.error::before{
+    content : "this is required field";
+    color: black;
+}
+#error-text{
+    color: #d52b1e;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#error-number{
+    color: #d52b1e;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#error-NaN{
+    color: #d52b1e;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0; 
+}
+
+.fa-circle-exclamation:before, .fa-exclamation-circle:before {
+    font-size: initial;
+    margin-right: 2px;
+}
+
+.state-styles{
+    padding: 5px 18px;
+    border: 1px solid red;
+}
