@@ -197,16 +197,15 @@ function sendEmail(){
     Email.send({
         Host : "smtp.elasticemail.com",
         Port: 2525,
-        Username : "stripedigitalltd@gmail.com",
-        Password : "B63CE9ED64A14B967377BC8DD671B6D39541",
-        To : 'mouni.mani2911@gmail.com',
-        From : "stripedigitalltd@gmail.com",
+        Username : "mounikagnd@gmail.com",
+        Password : "5F5435C1C0953293B71BAB54853F1EF3DD55",
+        To : 'sateeshyen@gmail.com',
+        From : document.getElementById('email').value,
         Subject : "Contact From",
-        Body :  'msg'
+        Body : 'Name: ' + document.getElementById('fname').value + ', ' + 'Email: ' + document.getElementById('email').value + ', ' + 'Phone: ' + document.getElementById('phone-number').value +'.'
     }).then(
     message => alert(message)
     ).catch((error) => {
         console.error(error);
     })
 }
-sendEmail();
