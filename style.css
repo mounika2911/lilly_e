@@ -4,7 +4,7 @@ body{
  padding: 0;
 }
 header{
-    background-color: rgba(220,32,17,.74);
+    background-color: rgba(17, 119, 220, 0.74);
     
 }
 .container {
@@ -22,17 +22,17 @@ header{
     padding : 12px 14px 12px 8px;
 }
 .input-border{
-    border : 1px solid #d52b1e;
+    border : 1px solid rgba(17, 119, 220, 0.74);;
 }
 .acc-heading{
-   color : #d52b1e;
-   border: 2px solid #d52b1e;
+   color : rgba(17, 119, 220, 0.74);;
+   border: 2px solid rgba(17, 119, 220, 0.74);;
    font-weight: bold;
    padding: 5px 10px;
    margin-left: 30px;
 }
 .fa-solid{
-    color: #d52b1e;
+    color: rgba(17, 119, 220, 0.74);;
     font-size: 30px;
     margin-top: 6px;
 }
@@ -62,7 +62,7 @@ header{
 .accordian-tab::before {
     content: ' \002B';
     font-size: 30px;
-    background-color: #d52b1e;
+    background-color: rgba(17, 119, 220, 0.74);;
     color: white;
     font-weight: 700;
     padding: 0px 11px 4px 12px;
@@ -73,7 +73,7 @@ header{
 .accordian-tab.activate::before {
     content: ' \002D';
     font-size: 30px;
-    background-color: #d52b1e;
+    background-color: rgba(17, 119, 220, 0.74);;
     color: white;
     font-weight: 700;
     padding: 0px 11px 4px 12px;
@@ -115,7 +115,7 @@ header{
 }
 
 .btn-modal{
-    background-color: #d52b1e;
+    background-color: rgba(17, 119, 220, 0.74);;
     color: white;
     text-align: center;
     padding: 5px;
@@ -124,7 +124,7 @@ header{
 }
 
 textarea{
-    border: 1px solid #d52b1e;
+    border: 1px solid rgba(17, 119, 220, 0.74);;
 }
 
 .other-modal-close{
@@ -138,19 +138,19 @@ textarea{
     color: black;
 }
 #error-text{
-    color: #d52b1e;
+    color: rgba(17, 119, 220, 0.74);;
     font-weight: 500;
     margin-bottom: 0;
     margin-top: 0;
 }
 #error-number{
-    color: #d52b1e;
+    color: rgba(17, 119, 220, 0.74);;
     font-weight: 500;
     margin-bottom: 0;
     margin-top: 0;
 }
 #error-NaN{
-    color: #d52b1e;
+    color: rgba(17, 119, 220, 0.74);;
     font-weight: 500;
     margin-bottom: 0;
     margin-top: 0; 
